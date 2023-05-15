@@ -13,19 +13,19 @@ import streamlit as st
 from PIL import Image
 from streamlit_option_menu import option_menu
 
-data=pd.read_csv('C:/Users/DELL/Desktop/st1/heart.csv')
+data=pd.read_csv('heart.csv')
 
 #heart_disease_model = pickle.load(open('C:/Users/DELL/Desktop/st1/heart_disease_model.sav','rb'))
-rfbm_model = pickle.load(open('C:/Users/DELL/Desktop/st1/heart_disease_model_rfbm.sav','rb'))
-dtbm_model = pickle.load(open('C:/Users/DELL/Desktop/st1/heart_disease_model_dtbm.sav','rb'))
-adaboost_model = pickle.load(open('C:/Users/DELL/Desktop/st1/heart_disease_model_adaboost.sav','rb'))
-gb_model = pickle.load(open('C:/Users/DELL/Desktop/st1/heart_disease_model_gradientboost.sav','rb'))
-knn_model = pickle.load(open('C:/Users/DELL/Desktop/st1/heart_disease_model_knnbm.sav','rb'))
-rfbm_r = pickle.load(open('C:/Users/DELL/Desktop/st1/relief_rfbm.sav','rb'))
-dtbm_r = pickle.load(open('C:/Users/DELL/Desktop/st1/relief_dtbm.sav','rb'))
-adaboost_r = pickle.load(open('C:/Users/DELL/Desktop/st1/relief_adaboost.sav','rb'))
-gb_r = pickle.load(open('C:/Users/DELL/Desktop/st1/relief_gradientboost.sav','rb'))
-knn_r = pickle.load(open('C:/Users/DELL/Desktop/st1/relief_knnbm.sav','rb'))
+rfbm_model = pickle.load(open('heart_disease_model_rfbm.sav','rb'))
+dtbm_model = pickle.load(open('heart_disease_model_dtbm.sav','rb'))
+adaboost_model = pickle.load(open('heart_disease_model_adaboost.sav','rb'))
+gb_model = pickle.load(open('heart_disease_model_gradientboost.sav','rb'))
+knn_model = pickle.load(open('heart_disease_model_knnbm.sav','rb'))
+rfbm_r = pickle.load(open('relief_rfbm.sav','rb'))
+dtbm_r = pickle.load(open('relief_dtbm.sav','rb'))
+adaboost_r = pickle.load(open('relief_adaboost.sav','rb'))
+gb_r = pickle.load(open('relief_gradientboost.sav','rb'))
+knn_r = pickle.load(open('relief_knnbm.sav','rb'))
 
     
 # sidebar for navigation
@@ -39,7 +39,7 @@ with st.sidebar:
                           default_index=0)
 if (selected == 'Home'):
     st.title("Use of Relief and LASSO Feature Selection Approaches in Machine Learning Algorithms for Effective Cardiovascular")
-    image=Image.open("C:/Users/DELL/Desktop/st1/dataset-cover.jpg")
+    image=Image.open("dataset-cover.jpg")
     st.image(image, caption='',output_format="auto")
     '''One of the most prevalent and significant diseases affecting peoples health is
   cardiovascular disease (CVD). Early diagnosis may allow for CVD mitigation or prevention,
