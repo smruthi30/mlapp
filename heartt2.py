@@ -252,7 +252,7 @@ if (selected == 'Data visualisation'):
     if st.checkbox("comparisons"):
         image=Image.open("comparebefore.jpg")
         st.image(image, caption='',output_format="auto")
-        image=Image.open("compareafterlasso.jpg")
+        image=Image.open("compafterlasso.jpg")
         st.image(image, caption='',output_format="auto")
         image=Image.open("comparisonafterrelief.jpg")
         st.image(image, caption='',output_format="auto")
