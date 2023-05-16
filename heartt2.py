@@ -249,11 +249,13 @@ if (selected == 'Data visualisation'):
         fig=sns.pairplot(data)
         fig.figsize=(20, 20)
         st.pyplot(fig)
-    if st.checkbox("comparisons"):
+    if st.checkbox("Accuracies before feature selection"):
         image=Image.open("comparebefore.jpg")
         st.image(image, caption='',output_format="auto")
+    if st.checkbox("Accuracies after LASSO"):
         image=Image.open("compafterlasso.jpg")
         st.image(image, caption='',output_format="auto")
+    if st.checkbox("Accuracies after Relief"):
         image=Image.open("comparisonafterrelief.jpg")
         st.image(image, caption='',output_format="auto")
         
