@@ -253,7 +253,7 @@ if (selected == 'Data visualisation'):
         image=Image.open("comparebefore.jpg")
         st.image(image, caption='',output_format="auto")
     if st.checkbox("Accuracies after LASSO"):
-        image=Image.open("compafterlasso.jpg")
+        image=Image.open("compafterlasoo.jpg")
         st.image(image, caption='',output_format="auto")
     if st.checkbox("Accuracies after Relief"):
         image=Image.open("comparisonafterrelief.jpg")
