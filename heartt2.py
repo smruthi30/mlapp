@@ -62,7 +62,7 @@ if (selected == 'Heart Disease Prediction'):
     st.title('Heart Disease Prediction using ML')
     
     col1, col2, col3 = st.columns(3)
-    
+   
     with col1:
         age = st.text_input('Age')
     with col2:
@@ -249,4 +249,12 @@ if (selected == 'Data visualisation'):
         fig=sns.pairplot(data)
         fig.figsize=(20, 20)
         st.pyplot(fig)
+    if st.checkbox("comparisons"):
+        image=Image.open("comparebefore.jpg")
+        st.image(image, caption='',output_format="auto")
+        image=Image.open("comparisonafterlasso.jpg")
+        st.image(image, caption='',output_format="auto")
+        image=Image.open("comparisonafterrelief.jpg")
+        st.image(image, caption='',output_format="auto")
+        
         
